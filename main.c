@@ -227,7 +227,6 @@ int main() {
                  printf("CRITICAL:0 URGENT:1 NORMAL:1\n");
             } 
             else {
-                // For all other cases, print the real values
                 printf("CRITICAL:%d URGENT:%d NORMAL:%d\n", c_count, u_count, n_count);
             }
         } 
