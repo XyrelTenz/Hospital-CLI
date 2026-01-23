@@ -7,7 +7,6 @@
 #define W 30  // Waiting time limit (minutes/seconds) before an URGENT patient becomes CRITICAL
 
 
-// The Patient structure acts as the "Medical Record" stored in our master list.
 typedef struct Patient {
     char name[MAX_NAME_LEN];
     int arrival_time;
