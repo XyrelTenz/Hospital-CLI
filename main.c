@@ -9,6 +9,7 @@
 typedef struct Patient {
     char name[MAX_NAME_LEN];
     int arrival_time;
+    int in_time;
     int current_severity;   // 0 = NORMAL, 1 = URGENT, 2 = CRITICAL
     int treatment_time;     // Records when the doctor actually saw them
     int queue_arrival_time; // Used to track how long they've sat in their current tier
