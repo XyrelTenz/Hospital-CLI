@@ -11,7 +11,7 @@ typedef struct Patient {
     int arrival_time;
     int in_time;
     int current_severity;   // 0 = NORMAL, 1 = URGENT, 2 = CRITICAL
-    int treatment_time;     // Records when the doctor actually saw them
+    int treatment_time;
     int queue_arrival_time; // Used to track how long they've sat in their current tier
     int is_treated;         // Simple flag to check if they are still in the waiting room
     struct Patient *next;
