@@ -17,7 +17,6 @@ typedef struct Patient {
     struct Patient *next;
 } Patient;
 
-// A standard Node used for our Stacks (Critical) and Queues (Urgent/Normal).
 typedef struct Node {
     Patient *patient;
     struct Node *next;
