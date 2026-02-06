@@ -22,7 +22,6 @@ typedef struct Node {
     struct Node *next;
 } Node;
 
-// Dito po makikita mga lahat ng record ng patient
 Patient *master_list = NULL;   
 // Itong Line of Code Po to check if its CRITICAL/NORMAL/URGENT Patients
 Node *critical_stack = NULL;   
