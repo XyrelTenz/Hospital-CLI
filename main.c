@@ -1,4 +1,4 @@
-#include <stdio.h>
+ik#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
@@ -33,8 +33,6 @@ int total_arrivals = 0;
 int total_treated = 0;
 int c_count = 0, u_count = 0, n_count = 0;
 
-
-// This function convert nya yung input mo into numbers for example NORMAL
 int sev_to_int(char *s) {
     if (strcasecmp(s, "CRITICAL") == 0) return 2;
     if (strcasecmp(s, "URGENT") == 0) return 1;
