@@ -39,7 +39,6 @@ int sev_to_int(char *s) {
     return 0;
 }
 
-// Itong function naman e convert nya yung numbers into readable text for status reports.
 const char* int_to_sev(int i) {
     return (i == 2) ? "CRITICAL" : (i == 1) ? "URGENT" : "NORMAL";
 }
