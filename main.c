@@ -23,7 +23,6 @@ typedef struct Node {
 } Node;
 
 Patient *master_list = NULL;   
-// Itong Line of Code Po to check if its CRITICAL/NORMAL/URGENT Patients
 Node *critical_stack = NULL;   
 Node *urgent_front = NULL, *urgent_rear = NULL; 
 Node *normal_front = NULL, *normal_rear = NULL; 
