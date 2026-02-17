@@ -43,7 +43,6 @@ const char* int_to_sev(int i) {
 }
 
 
-// Critical patients are handled like a stack—the most recent emergency gets immediate attention.
 // If yung patient is CRITICAL it prioritize nya 
 void push_crit(Patient *p) {
     Node *n = malloc(sizeof(Node));
