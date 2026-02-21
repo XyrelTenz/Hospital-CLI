@@ -42,8 +42,6 @@ const char* int_to_sev(int i) {
     return (i == 2) ? "CRITICAL" : (i == 1) ? "URGENT" : "NORMAL";
 }
 
-
-// If yung patient is CRITICAL it prioritize nya 
 void push_crit(Patient *p) {
     Node *n = malloc(sizeof(Node));
     n->patient = p; 
