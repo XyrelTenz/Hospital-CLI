@@ -51,9 +51,6 @@ void push_crit(Patient *p) {
     p->current_severity = 2;
 }
 
-
-// This function naman po think a receptionist sa hospital na nag hahandle sa mga bagong dating na patient but only Normal at Urgent if CRITICAL yung patient it bypass this function
-
 // We use double pointer or ** dahil gusto natin ma change yung value permanently 
 // ENQUEUE
 void enq(Node **f, Node **r, int *cnt, Patient *p, int sev) {
