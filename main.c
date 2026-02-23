@@ -51,8 +51,6 @@ void push_crit(Patient *p) {
     p->current_severity = 2;
 }
 
-// We use double pointer or ** dahil gusto natin ma change yung value permanently 
-// ENQUEUE
 void enq(Node **f, Node **r, int *cnt, Patient *p, int sev) {
     Node *n = malloc(sizeof(Node));
     n->patient = p; 
