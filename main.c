@@ -62,7 +62,6 @@ void enq(Node **f, Node **r, int *cnt, Patient *p, int sev) {
     p->queue_arrival_time = p->arrival_time; 
 }
 
-// Same lang ito sa ENQUEUE function sa itaas pero ang role po nito is to DEQUEUE a patient meaning if other patient is tapos na sa pag assist proceed to another
 Patient* deq(Node **f, Node **r, int *cnt) {
     if (!*f) return NULL;
     Node *t = *f; 
