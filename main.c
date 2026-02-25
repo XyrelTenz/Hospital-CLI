@@ -73,7 +73,6 @@ Patient* deq(Node **f, Node **r, int *cnt) {
     return p;
 }
 
-// This helps us move a patient out of a lower-tier line when they get promoted or escalated.
 // Itong yung function na e bypass yung QUEUES if yung patient is in CRITICAL meaning it automatically proceed to assits
 // If dalawa naman yung critical tas my paparating na normal patient yung next na CRITICAL is still be assited after the other one is done
 void remove_from_queue(Node **f, Node **r, int *cnt, Patient *p) {
