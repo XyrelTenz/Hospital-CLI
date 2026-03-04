@@ -73,7 +73,6 @@ Patient* deq(Node **f, Node **r, int *cnt) {
     return p;
 }
 
-// If dalawa naman yung critical tas my paparating na normal patient yung next na CRITICAL is still be assited after the other one is done
 void remove_from_queue(Node **f, Node **r, int *cnt, Patient *p) {
     Node *curr = *f, *prev = NULL;
     while (curr) {
