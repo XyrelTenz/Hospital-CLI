@@ -86,9 +86,7 @@ void remove_from_queue(Node **f, Node **r, int *cnt, Patient *p) {
         prev = curr; curr = curr->next;
     }
 }
-
-
-// This function naman is for URGENT patient na nag iintay ng more than sa waiting time which is 30 kung 30 up na siya nag iintay we transafer or escalate him/her to Critial or ER ROOm 
+ 
 void check_escalations(int t) {
     Node *curr, *next;
 
