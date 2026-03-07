@@ -90,7 +90,7 @@ void remove_from_queue(Node **f, Node **r, int *cnt, Patient *p) {
 void check_escalations(int t) {
     Node *curr, *next;
 
-    // We check this FIRST so we only escalate people who were ALREADY Urgent.
+   
     // This prevents the "Double Jump" (Normal -> Urgent -> Critical) in one tick.
     curr = urgent_front;
     while (curr) {
