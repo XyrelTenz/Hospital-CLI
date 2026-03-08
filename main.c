@@ -1,4 +1,4 @@
-ik#include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
@@ -90,8 +90,6 @@ void remove_from_queue(Node **f, Node **r, int *cnt, Patient *p) {
 void check_escalations(int t) {
     Node *curr, *next;
 
-   
-    // This prevents the "Double Jump" (Normal -> Urgent -> Critical) in one tick.
     curr = urgent_front;
     while (curr) {
         next = curr->next;
