@@ -107,7 +107,6 @@ void check_escalations(int t) {
     while (curr) {
         next = curr->next;
         
-        // If a Normal patient waits > W, promote them to URGENT
         if (!curr->patient->is_treated && (t - curr->patient->arrival_time) > W) {
             Patient *p = curr->patient;
             
