@@ -101,7 +101,6 @@ void check_escalations(int t) {
         curr = next;
     }
 
-    // Patients moved here will land in Urgent and wait for the NEXT cycle 
     // before being checked for Critical.
     curr = normal_front;
     while (curr) {
