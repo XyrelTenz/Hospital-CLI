@@ -101,7 +101,6 @@ void check_escalations(int t) {
         curr = next;
     }
 
-    // before being checked for Critical.
     curr = normal_front;
     while (curr) {
         next = curr->next;
