@@ -114,7 +114,6 @@ void check_escalations(int t) {
             // Add to URGENT
             enq(&urgent_front, &urgent_rear, &u_count, p, 1);
             
-            // Dri makita why ang output kay critical: 0 urgent:1 norma: 0
             // if e try nimog tan aw ang E patient iyang waiting time kay dli na normal which is ang normal waiting time is 30 to be considered na normal siya pero 36 ang ning gawas so urgent siya
             // printf(">> ESCALATION: %s moved NORMAL -> URGENT (Total Wait: %d)\n", p->name, t - p->arrival_time);
         }
