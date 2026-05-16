@@ -121,7 +121,6 @@ void check_escalations(int t) {
     }
 }
 
-// Handles the logic for a new person walking into the ER.
 void handle_arrival(char *name, char *sev_s, int t) {
     Patient *p = malloc(sizeof(Patient));
     strcpy(p->name, name); 
