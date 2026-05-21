@@ -108,7 +108,6 @@ void check_escalations(int t) {
         if (!curr->patient->is_treated && (t - curr->patient->arrival_time) > W) {
             Patient *p = curr->patient;
             
-            // Remove from Normal
             remove_from_queue(&normal_front, &normal_rear, &n_count, p);
             
             // Add to URGENT
