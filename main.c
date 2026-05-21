@@ -145,7 +145,6 @@ void handle_arrival(char *name, char *sev_s, int t) {
     check_escalations(t);
 }
 
-// This function naman is to check kung sino uunahin e treat but e check muna ni DOCTOR yung status if its CRITICAL/URGENT/NORMAL
 void handle_treat(int t) {
 // Update priorities based on the current time
     check_escalations(t); 
