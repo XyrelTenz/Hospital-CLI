@@ -146,7 +146,6 @@ void handle_arrival(char *name, char *sev_s, int t) {
 }
 
 void handle_treat(int t) {
-// Update priorities based on the current time
     check_escalations(t); 
     int i;
     for ( i = 0; i < doctors; i++) {
