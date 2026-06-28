@@ -161,7 +161,6 @@ void handle_treat(int t) {
         } 
         // Check the Urgent queue
         else if (urgent_front) p = deq(&urgent_front, &urgent_rear, &u_count);
-        // Check the Normal queue
         else if (normal_front) p = deq(&normal_front, &normal_rear, &n_count);
 
         if (p) {
