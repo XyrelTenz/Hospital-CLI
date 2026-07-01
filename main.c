@@ -159,7 +159,7 @@ void handle_treat(int t) {
             free(temp); 
             c_count--;
         } 
-        // Check the Urgent queue
+        
         else if (urgent_front) p = deq(&urgent_front, &urgent_rear, &u_count);
         else if (normal_front) p = deq(&normal_front, &normal_rear, &n_count);
 
