@@ -151,7 +151,6 @@ void handle_treat(int t) {
     for ( i = 0; i < doctors; i++) {
         Patient *p = NULL;
         
-        // Check the Critical stack
         if (critical_stack) {
             Node *temp = critical_stack; 
             p = temp->patient;
