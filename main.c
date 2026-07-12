@@ -144,7 +144,7 @@ void handle_arrival(char *name, char *sev_s, int t) {
     }
     check_escalations(t);
 }
-//h
+
 void handle_treat(int t) {
     check_escalations(t); 
     int i;
