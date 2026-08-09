@@ -123,7 +123,6 @@ void handle_arrival(char *name, char *sev_s, int t) {
     Patient *p = malloc(sizeof(Patient));
     strcpy(p->name, name); 
     p->arrival_time = t; 
-    // -1 means "Not treated yet"
     p->treatment_time = -1; 
     p->is_treated = 0; 
     p->queue_arrival_time = t; 
