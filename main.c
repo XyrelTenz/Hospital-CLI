@@ -127,7 +127,7 @@ void handle_arrival(char *name, char *sev_s, int t) {
     p->is_treated = 0; 
     p->queue_arrival_time = t; 
     p->next = master_list;
-    // Add to our master list of the new patient records
+    
     master_list = p; 
     
     int s = sev_to_int(sev_s);
