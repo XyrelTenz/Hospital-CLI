@@ -110,7 +110,6 @@ void check_escalations(int t) {
             
             remove_from_queue(&normal_front, &normal_rear, &n_count, p);
             
-            // Add to URGENT
             enq(&urgent_front, &urgent_rear, &u_count, p, 1);
             
             // printf(">> ESCALATION: %s moved NORMAL -> URGENT (Total Wait: %d)\n", p->name, t - p->arrival_time);
