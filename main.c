@@ -134,7 +134,6 @@ void handle_arrival(char *name, char *sev_s, int t) {
     else if (s == 1) enq(&urgent_front, &urgent_rear, &u_count, p, 1);
     else enq(&normal_front, &normal_rear, &n_count, p, 0);
 
-    // Every 5 arrivals, the oldest Normal patient gets promoted to Urgent.
     total_arrivals++;
     if (total_arrivals % 5 == 0 && n_count > 0) {
         Patient *promoted = deq(&normal_front, &normal_rear, &n_count);
