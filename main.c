@@ -87,7 +87,6 @@ void remove_from_queue(Node **f, Node **r, int *cnt, Patient *p) {
     }
 }
  
-//
 void check_escalations(int t) {
     Node *curr, *next;
 
