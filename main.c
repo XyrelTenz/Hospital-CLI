@@ -169,6 +169,7 @@ void handle_treat(int t) {
 }
 
 
+//
 int main() {
     char cmd[20], name[MAX_NAME_LEN], sev[20];
     int t;
