@@ -3,7 +3,6 @@
 #include <string.h>
 #include <ctype.h>
 
-//
 #define MAX_NAME_LEN 100
 #define W 30 
 
