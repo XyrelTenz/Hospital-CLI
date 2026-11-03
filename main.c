@@ -7,7 +7,6 @@
 #define MAX_NAME_LEN 100
 #define W 30 
 
-////
 typedef struct Patient {
     char name[MAX_NAME_LEN];
     int arrival_time;
